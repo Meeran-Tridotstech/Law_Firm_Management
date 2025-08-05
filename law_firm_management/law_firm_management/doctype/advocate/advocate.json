@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ADV-.###",
+ "creation": "2025-08-05 12:29:15.578168",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "assigned_details_section",
+  "full_name",
+  "email",
+  "phone_number",
+  "bar_registration_no",
+  "column_break_ngnp",
+  "specialization",
+  "year_of_experience",
+  "bio",
+  "section_break_uwxa",
+  "assigned_cases"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "unique": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "bar_registration_no",
+   "fieldtype": "Data",
+   "label": "Bar Registration No"
+  },
+  {
+   "fieldname": "column_break_ngnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Select",
+   "label": "Specialization",
+   "options": "\nCriminal\nCivil\nFamily"
+  },
+  {
+   "fieldname": "year_of_experience",
+   "fieldtype": "Int",
+   "label": "Year Of Experience"
+  },
+  {
+   "fieldname": "bio",
+   "fieldtype": "Small Text",
+   "label": "Profile"
+  },
+  {
+   "fieldname": "section_break_uwxa",
+   "fieldtype": "Section Break",
+   "label": "Assigned Cases"
+  },
+  {
+   "fieldname": "assigned_cases",
+   "fieldtype": "Table",
+   "label": "Assigned Cases",
+   "options": "Advocate Case Mapping"
+  },
+  {
+   "fieldname": "assigned_details_section",
+   "fieldtype": "Section Break",
+   "label": "Advocate Details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-05 18:10:49.153995",
+ "modified_by": "Administrator",
+ "module": "Law Firm Management",
+ "name": "Advocate",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "if_owner": 1,
+   "read": 1,
+   "role": "Advocate",
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

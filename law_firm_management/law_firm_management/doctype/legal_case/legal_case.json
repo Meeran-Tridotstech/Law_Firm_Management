@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LC-.###",
+ "creation": "2025-08-04 15:40:47.141891",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tnir",
+  "client",
+  "case_title",
+  "case_type",
+  "filing_date",
+  "next_hearing",
+  "column_break_sbna",
+  "advocate",
+  "assigned_advocate",
+  "status",
+  "case_file",
+  "section_break_yvnp",
+  "description",
+  "hearings",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tnir",
+   "fieldtype": "Section Break",
+   "label": "Legal Case"
+  },
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Case Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "case_type",
+   "fieldtype": "Select",
+   "label": "Case Type",
+   "options": "Civil\nCriminal\nFamily\nCorporate\nProperty\nConsumer\nLabour\nTax\nEnvironmental\nCyber Crime\nIntellectual Property\nConstitutional\nBanking\nInsurance\nHuman Rights\nOthers"
+  },
+  {
+   "fieldname": "filing_date",
+   "fieldtype": "Date",
+   "label": "Filing Date"
+  },
+  {
+   "fieldname": "next_hearing",
+   "fieldtype": "Date",
+   "label": "Next Hearing"
+  },
+  {
+   "fieldname": "column_break_sbna",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nOpen\nClosed, Rejected"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "case_file",
+   "fieldtype": "Attach",
+   "label": "Case File"
+  },
+  {
+   "fieldname": "section_break_yvnp",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "hearings",
+   "fieldtype": "Table",
+   "label": "Hearings",
+   "options": "Hearing Tracker"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "advocate",
+   "fieldtype": "Link",
+   "label": "Advocate",
+   "options": "Advocate"
+  },
+  {
+   "fetch_from": "advocate.full_name",
+   "fieldname": "assigned_advocate",
+   "fieldtype": "Data",
+   "label": "Assigned Advocate"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Legal Case",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-05 20:18:21.269892",
+ "modified_by": "Administrator",
+ "module": "Law Firm Management",
+ "name": "Legal Case",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Advocate",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Client",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

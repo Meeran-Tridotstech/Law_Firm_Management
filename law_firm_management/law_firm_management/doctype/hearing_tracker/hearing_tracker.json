@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "HT-.###",
+ "creation": "2025-08-05 12:13:45.721683",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hearing_date",
+  "court_name",
+  "judge_name",
+  "column_break_ljom",
+  "hearing_notes",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "hearing_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Hearing Date"
+  },
+  {
+   "fieldname": "court_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Court Name"
+  },
+  {
+   "fieldname": "judge_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Judge Name"
+  },
+  {
+   "fieldname": "hearing_notes",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Hearing Notes"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nScheduled\nCompleted\nAdjourned"
+  },
+  {
+   "fieldname": "column_break_ljom",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-05 15:48:51.752818",
+ "modified_by": "Administrator",
+ "module": "Law Firm Management",
+ "name": "Hearing Tracker",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
