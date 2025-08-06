@@ -18,8 +18,8 @@
   "status",
   "case_file",
   "section_break_yvnp",
-  "description",
   "hearings",
+  "description",
   "amended_from"
  ],
  "fields": [
@@ -59,7 +59,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Draft\nOpen\nClosed, Rejected"
+   "options": "Draft\nOpen\nClosed\nRejected"
   },
   {
    "fieldname": "description",
@@ -80,7 +80,8 @@
    "fieldname": "hearings",
    "fieldtype": "Table",
    "label": "Hearings",
-   "options": "Hearing Tracker"
+   "options": "Hearing Tracker",
+   "width": "1000"
   },
   {
    "fieldname": "client",
@@ -114,9 +115,8 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2025-08-05 20:18:21.269892",
+ "modified": "2025-08-06 16:12:49.200647",
  "modified_by": "Administrator",
  "module": "Law Firm Management",
  "name": "Legal Case",
@@ -133,7 +133,6 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   },
   {
@@ -145,7 +144,6 @@
    "report": 1,
    "role": "Advocate",
    "share": 1,
-   "submit": 1,
    "write": 1
   },
   {
@@ -160,8 +158,10 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "case_title",
  "track_changes": 1
 }
