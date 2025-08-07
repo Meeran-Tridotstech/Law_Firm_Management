@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CHAT-.####",
+ "creation": "2025-08-07 16:49:25.443468",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "chat_room_section",
+  "room_name",
+  "advocate",
+  "client",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "room_name",
+   "fieldtype": "Data",
+   "label": "Room Name"
+  },
+  {
+   "fieldname": "advocate",
+   "fieldtype": "Link",
+   "label": "Advocate",
+   "options": "User"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "chat_room_section",
+   "fieldtype": "Section Break",
+   "label": "Chat Room"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-07 18:13:22.083465",
+ "modified_by": "Administrator",
+ "module": "Law Firm Management",
+ "name": "Chat Room",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

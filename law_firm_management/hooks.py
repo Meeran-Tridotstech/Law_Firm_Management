@@ -242,3 +242,14 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+#Chat Message:
+#------------
+
+doctype_js = {
+    "Chat Message": "law_firm_management/public/js/chat_ui.js"
+}
+
+
+website_route_rules = [
+    {"from_route": "/chat-room/<room_id>", "to_route": "chat_room"}
+]

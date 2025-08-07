@@ -1,0 +1,25 @@
+<h3>Chat Room: {{ room_id }}</h3>
+<div id="chat-box" style="height:300px; overflow-y:scroll; border:1px solid #ccc;">
+  {% for msg in messages %}
+    <p><b>{{ msg.sender }}:</b> {{ msg.message }}</p>
+  {% endfor %}
+</div>
+
+<input type="text" id="msg" placeholder="Type your message...">
+<button onclick="sendMsg()">Send</button>
+
+<script>
+function sendMsg() {
+  const message = document.getElementById("msg").value;
+  fetch("/api/method/law_firm_management.api.send_message", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      room_id: "{{ room_id }}",
+      message: message
+    })
+  }).then(res => location.reload());
+}
+</script>
