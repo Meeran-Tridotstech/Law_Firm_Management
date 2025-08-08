@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "CM-.####",
  "creation": "2025-08-07 16:52:41.226877",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,7 +10,7 @@
   "sender",
   "message",
   "attachement",
-  "send_at"
+  "sent_at"
  ],
  "fields": [
   {
@@ -35,18 +36,19 @@
    "label": "Attachement"
   },
   {
-   "fieldname": "send_at",
+   "fieldname": "sent_at",
    "fieldtype": "Datetime",
-   "label": "Send At"
+   "label": "Sent At"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-07 16:57:40.328377",
+ "modified": "2025-08-08 15:38:11.538084",
  "modified_by": "Administrator",
  "module": "Law Firm Management",
  "name": "Chat Message",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

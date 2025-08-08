@@ -13,6 +13,7 @@
   "column_break_jxyn",
   "client_type",
   "id_proof_number",
+  "assigned_advocate",
   "section_break_zeii",
   "notes",
   "column_break_mvcq",
@@ -27,17 +28,23 @@
   {
    "fieldname": "client_name",
    "fieldtype": "Data",
-   "label": "Client Name"
+   "in_list_view": 1,
+   "label": "Client Name",
+   "reqd": 1
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "phone_number",
    "fieldtype": "Phone",
-   "label": "Phone Number"
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_jxyn",
@@ -72,13 +79,19 @@
    "fieldname": "address",
    "fieldtype": "Small Text",
    "label": "Address"
+  },
+  {
+   "fieldname": "assigned_advocate",
+   "fieldtype": "Link",
+   "label": "Assigned Advocate",
+   "options": "Advocate"
   }
  ],
  "grid_page_length": 50,
  "icon": "<i class=\"bi bi-alarm\"></i>",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-05 19:30:32.702559",
+ "modified": "2025-08-08 17:37:55.024699",
  "modified_by": "Administrator",
  "module": "Law Firm Management",
  "name": "Client",

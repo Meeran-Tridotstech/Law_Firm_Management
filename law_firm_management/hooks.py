@@ -245,11 +245,17 @@ app_license = "mit"
 #Chat Message:
 #------------
 
-doctype_js = {
-    "Chat Message": "law_firm_management/public/js/chat_ui.js"
-}
-
-
+# website route for dynamic chat-room URL
 website_route_rules = [
     {"from_route": "/chat-room/<room_id>", "to_route": "chat_room"}
 ]
+
+# load chat UI JS only on chat_room page
+page_js = {
+    "chat_room": "law_firm_management/public/js/chat_ui.js"
+}
+
+# Optional: if you want desk form script for Chat Message doctype
+doctype_js = {
+    "Chat Message": "law_firm_management/public/js/chat_ui.js"
+}
