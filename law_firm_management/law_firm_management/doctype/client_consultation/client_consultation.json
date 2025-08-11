@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Cons-.###",
+ "creation": "2025-08-11 11:24:01.357287",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "client_details_section",
+  "client_name",
+  "case_type",
+  "case_titile",
+  "consultation_type",
+  "column_break_jmfl",
+  "topic__subject",
+  "consultation_fee",
+  "consult_advocate_section",
+  "advocate",
+  "column_break_koef",
+  "consult_date_1",
+  "column_break_gpjx",
+  "consult_date_2",
+  "section_break_bhjd",
+  "payment_status",
+  "column_break_rtcp",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Client Name",
+   "placeholder": "Cilent Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "case_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Case Type",
+   "options": "Civil Case\nCriminal Case\nFamily Law\nCorporate and Criminal Case\nLabour & Employement Case\nPrperty & Real Estate\nTaxation Case\nConstitutional / WritPettions",
+   "placeholder": "CHoose Case Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "case_titile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Case Titile",
+   "placeholder": "Enter Case Title",
+   "reqd": 1
+  },
+  {
+   "description": "Only Available Advocate",
+   "fieldname": "advocate",
+   "fieldtype": "Link",
+   "label": "Advocate",
+   "options": "Advocate",
+   "placeholder": "Choose Advocate"
+  },
+  {
+   "fieldname": "client_details_section",
+   "fieldtype": "Section Break",
+   "label": "Client Details"
+  },
+  {
+   "fieldname": "column_break_jmfl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consult_advocate_section",
+   "fieldtype": "Section Break",
+   "label": "Consult Advocate"
+  },
+  {
+   "fieldname": "column_break_koef",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consult_date_1",
+   "fieldtype": "Datetime",
+   "label": "Consult Date 1",
+   "placeholder": "Select the Date ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gpjx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consult_date_2",
+   "fieldtype": "Datetime",
+   "label": "Consult Date 2",
+   "placeholder": "Select the Date "
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Scheduled\nCompleted\nCancelled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "consultation_type",
+   "fieldtype": "Select",
+   "label": "Consultation Type",
+   "options": "In-person\nPhone\nVideo Call",
+   "placeholder": "Choose the Consultation Type"
+  },
+  {
+   "fieldname": "topic__subject",
+   "fieldtype": "Small Text",
+   "label": "Topic / Subject",
+   "max_height": "170px",
+   "placeholder": "Subject"
+  },
+  {
+   "fieldname": "consultation_fee",
+   "fieldtype": "Currency",
+   "label": "Consultation Fee",
+   "placeholder": "Fee"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Paid\nPending\nWaived"
+  },
+  {
+   "fieldname": "section_break_bhjd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_rtcp",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-11 19:20:24.001053",
+ "modified_by": "Administrator",
+ "module": "Law Firm Management",
+ "name": "Client Consultation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
