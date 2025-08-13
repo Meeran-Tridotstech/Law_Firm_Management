@@ -9,18 +9,30 @@
   "client_details_section",
   "client_name",
   "case_type",
+  "column_break_upcc",
   "case_titile",
+  "phone_number",
+  "consultation_booking_section",
   "consultation_type",
-  "column_break_jmfl",
   "topic__subject",
-  "consultation_fee",
-  "consult_advocate_section",
   "advocate",
-  "column_break_koef",
+  "column_break_zgyx",
   "consult_date_1",
-  "column_break_gpjx",
   "consult_date_2",
-  "section_break_bhjd",
+  "consultation_fee",
+  "in_person_section",
+  "name1",
+  "mobile_number",
+  "column_break_utnr",
+  "date",
+  "time",
+  "phone_section",
+  "phone_name",
+  "phone_mobile_number",
+  "column_break_igid",
+  "phone_date",
+  "phone_time",
+  "status1_sections",
   "payment_status",
   "column_break_rtcp",
   "status"
@@ -39,7 +51,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Case Type",
-   "options": "Civil Case\nCriminal Case\nFamily Law\nCorporate and Criminal Case\nLabour & Employement Case\nPrperty & Real Estate\nTaxation Case\nConstitutional / WritPettions",
+   "options": "\nCivil Case\nCriminal Case\nFamily Law\nCorporate and Criminal Case\nLabour & Employement Case\nPrperty & Real Estate\nTaxation Case\nConstitutional / WritPettions",
    "placeholder": "CHoose Case Type",
    "reqd": 1
   },
@@ -65,28 +77,11 @@
    "label": "Client Details"
   },
   {
-   "fieldname": "column_break_jmfl",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "consult_advocate_section",
-   "fieldtype": "Section Break",
-   "label": "Consult Advocate"
-  },
-  {
-   "fieldname": "column_break_koef",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "consult_date_1",
    "fieldtype": "Datetime",
    "label": "Consult Date 1",
    "placeholder": "Select the Date ",
    "reqd": 1
-  },
-  {
-   "fieldname": "column_break_gpjx",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "consult_date_2",
@@ -98,14 +93,13 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Scheduled\nCompleted\nCancelled",
-   "read_only": 1
+   "options": "\nScheduled\nCompleted\nCancelled"
   },
   {
    "fieldname": "consultation_type",
    "fieldtype": "Select",
    "label": "Consultation Type",
-   "options": "In-person\nPhone\nVideo Call",
+   "options": "\nIn-person\nPhone\nVideo Call",
    "placeholder": "Choose the Consultation Type"
   },
   {
@@ -125,21 +119,104 @@
    "fieldname": "payment_status",
    "fieldtype": "Select",
    "label": "Payment Status",
-   "options": "Paid\nPending\nWaived"
-  },
-  {
-   "fieldname": "section_break_bhjd",
-   "fieldtype": "Section Break"
+   "options": "\nPaid\nPending\nWaived"
   },
   {
    "fieldname": "column_break_rtcp",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status1_sections",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "column_break_upcc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consultation_booking_section",
+   "fieldtype": "Section Break",
+   "label": "Consultation Booking"
+  },
+  {
+   "fieldname": "column_break_zgyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "in_person_section",
+   "fieldtype": "Section Break",
+   "label": "In Person"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "options": "Client Consultation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_utnr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "phone_section",
+   "fieldtype": "Section Break",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "phone_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "options": "Client Consultation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "phone_mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_igid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "phone_time",
+   "fieldtype": "Time",
+   "label": "Time"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-11 19:20:24.001053",
+ "modified": "2025-08-13 20:22:02.286518",
  "modified_by": "Administrator",
  "module": "Law Firm Management",
  "name": "Client Consultation",

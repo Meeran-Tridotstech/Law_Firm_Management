@@ -8,7 +8,6 @@ from frappe.utils import getdate, today
 class ClientConsultation(Document):
 
     def validate(self):
-        # 1. Validate Client Name
         if not self.client_name or len(self.client_name.strip()) < 3:
             frappe.throw("Client Name must be at least 3 characters long.")
 
@@ -53,3 +52,6 @@ class ClientConsultation(Document):
                 message=f"New consultation for {self.client_name}",
                 user=advocate_email
             )
+    def before_save(self):
+        self.name1 = self.client_name
+        self.mobile_number = self.phone_number
